@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBrain, FaUserMd, FaHeartbeat } from 'react-icons/fa';
+import { FaBrain, FaUserMd, FaHeartbeat, FaSadTear, FaBalanceScale, FaBolt, FaPuzzlePiece, FaIdBadge, FaLock, FaMedal } from 'react-icons/fa';
+import { HiUserGroup, HiUserCircle, HiGlobeAlt } from 'react-icons/hi';
 
 const BackgroundSlideshow = () => {
   const images = [
@@ -38,13 +39,13 @@ const Home = () => {
   const services = [
     {
       icon: FaBrain,
-      title: 'Psychiatric Evaluation',
-      description: 'Comprehensive mental health assessments to understand your unique needs.',
+      title: 'Psychiatric Evaluation & Medication Management',
+      description: 'Thorough psychiatric evaluations combined with personalized medication management to accurately diagnose mental health conditions.',
     },
     {
       icon: FaUserMd,
-      title: 'Medication Management',
-      description: 'Expert medication management to help you achieve optimal mental health.',
+      title: 'Support for co-occurring disorders',
+      description: 'Integrated care for individuals facing both mental health and substance use challenges.',
     },
     {
       icon: FaHeartbeat,
@@ -81,6 +82,84 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Experience & Credentials Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            {[
+              {
+                name: "13+ Years of Experience",
+                icon: FaUserMd,
+                desc: "A decade-plus of trusted mental health care.",
+              },
+              {
+                name: "Licensed Providers",
+                icon: FaIdBadge,
+                desc: "Board-certified professionals you can rely on.",
+              },
+              {
+                name: "HIPAA Compliant",
+                icon: FaLock,
+                desc: "Your privacy and security are always protected.",
+              },
+              {
+                name: "Veteran-Owned",
+                icon: FaMedal,
+                desc: "Proudly owned and operated by a U.S. Veteran.",
+              },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="flex flex-col items-center text-center px-4"
+              >
+                <item.icon className="text-4xl text-purple-700 mb-4" />
+                <h3 className="text-xl font-semibold text-purple-800 mb-1">{item.name}</h3>
+                <p className="text-gray-600 text-sm">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4 flex flex-col-reverse lg:flex-row items-center gap-12">
+          {/* Image */}
+          <div
+            className="w-full lg:w-1/2"
+            data-aos="fade-right"
+          >
+            <img
+              src="images/WWA.jpg"
+              alt="Trackmind Team"
+              className="rounded-2xl shadow-lg object-cover w-full h-full max-h-[450px]"
+            />
+          </div>
+
+          {/* Text */}
+          <div
+            className="w-full lg:w-1/2"
+            data-aos="fade-left"
+          >
+            <h2 className="text-3xl font-bold text-purple-700 mb-4">Who We Are</h2>
+            <p className="text-gray-700 text-lg leading-relaxed mb-6">
+              At Trackmind Psychiatry, we are a dedicated team of mental health professionals committed to providing compassionate,
+              evidence-based care. Our mission is to empower individuals on their journey to mental wellness through personalized
+              treatment plans, holistic approaches, and unwavering support.
+            </p>
+            <p className="text-gray-600 text-md mb-6">
+              Whether you're seeking help for anxiety, depression, ADHD, or another mental health condition, we're here to guide
+              you with expertise, empathy, and innovation. Your mental health matters — and so do you.
+            </p>
+            <a
+              href="/about"
+              className="inline-block bg-purple-700 text-white px-6 py-3 rounded-xl shadow-md hover:bg-purple-800 transition-all duration-300"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section className="py-16 bg-gradient-to-b from-purple-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -98,7 +177,7 @@ const Home = () => {
               >
                 <service.icon className="h-12 w-12 text-purple-600 mb-4" />
                 <h3 className="text-xl font-bold text-purple-900 mb-2">{service.title}</h3>
-                <p className="text-purple-700">{service.description}</p>
+                <p className="text-gray-600">{service.description}</p>
               </div>
             ))}
           </div>
@@ -106,49 +185,46 @@ const Home = () => {
       </section>
 
       {/* Conditions Treated Section */}
-      <section className="py-16 bg-indigo-50">
+      <section className="py-16 bg-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-purple-800 mb-8">Conditions We Treat</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-8">
+          <h2 className="text-3xl font-bold text-purple-800 mb-12">Conditions Treated</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mb-12">
             {[
               {
                 name: "Depression",
-                img: "/images/Depression-1.jpg",
+                icon: FaSadTear,
+                desc: "Persistent sadness, loss of interest, and fatigue.",
               },
               {
                 name: "Anxiety",
-                img: "/images/Anxiety.jpg",
+                icon: FaHeartbeat,
+                desc: "Excessive worry, nervousness, or fear.",
               },
               {
                 name: "Bipolar Disorder",
-                img: "/images/BPD.webp",
+                icon: FaBalanceScale,
+                desc: "Mood swings between highs and lows.",
               },
               {
                 name: "PTSD",
-                img: "/images/PTSD.jpg",
+                icon: FaBolt,
+                desc: "Stress or trauma response after a distressing event.",
               },
               {
                 name: "OCD",
-                img: "/images/OCD.jpg",
+                icon: FaPuzzlePiece,
+                desc: "Repetitive thoughts and compulsive behaviors.",
               },
               {
                 name: "ADHD",
-                img: "/images/ADHD.jpg",
+                icon: FaBrain,
+                desc: "Inattention, hyperactivity, and impulsivity.",
               },
             ].map((condition, index) => (
-              <div
-                key={index}
-                className="bg-white border-t-4 border-purple-600 p-4 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
-              >
-                <img
-                  src={condition.img}
-                  alt={condition.name}
-                  className="w-full h-40 object-cover rounded-md mb-4"
-                />
-                <h3 className="text-xl font-semibold text-purple-700 mb-2">{condition.name}</h3>
-                <p className="text-purple-600 text-sm">
-                  Learn more about how we help with {condition.name.toLowerCase()}.
-                </p>
+              <div key={index} className="flex flex-col items-center text-purple-700 hover:text-purple-900 transition duration-200 px-4">
+                <condition.icon className="h-10 w-10 mb-3 text-purple-600" />
+                <h3 className="text-md font-semibold mb-1">{condition.name}</h3>
+                <p className="text-sm text-gray-600">{condition.desc}</p>
               </div>
             ))}
           </div>
@@ -163,6 +239,62 @@ const Home = () => {
 
 
 
+
+      {/*Why choose us */}
+      <section className="bg-gray-50 py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-purple-900">
+              Why Choose Us
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Card 1 */}
+            <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 text-center">
+              <div className="flex justify-center mb-4">
+                <HiUserCircle className="h-10 w-10 text-purple-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-purple-700 mb-2">
+                Compassionate, Expert Staff
+              </h3>
+              <p className="text-gray-600">
+                Our licensed providers bring years of clinical experience—
+                and a genuine commitment to your well-being and healing.
+              </p>
+            </div>
+
+            {/* Card 2 */}
+            <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 text-center">
+              <div className="flex justify-center mb-4">
+                <HiUserGroup className="h-10 w-10 text-purple-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-purple-700 mb-2">
+                Client-Centered Approach
+              </h3>
+              <p className="text-gray-600">
+                We believe in care that’s collaborative, respectful,
+                and personalized to your unique journey and goals.
+              </p>
+            </div>
+
+            {/* Card 3 */}
+            <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 text-center">
+              <div className="flex justify-center mb-4">
+                <HiGlobeAlt className="h-10 w-10 text-purple-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-purple-700 mb-2">
+                Culturally Competent, Inclusive Care
+              </h3>
+              <p className="text-gray-600">
+                We honor all identities and backgrounds, providing
+                culturally sensitive care that respects who you are.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* About Preview Section */}
       <section className="py-16 bg-gradient-to-r from-indigo-50 via-purple-50 to-pink-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -171,7 +303,7 @@ const Home = () => {
               <h2 className="text-3xl font-bold text-purple-900 mb-6">
                 Expert Mental Health Care
               </h2>
-              <p className="text-purple-700 mb-6">
+              <p className="text-gray-600 mb-6">
                 At Trackmind Psychiatry, we believe in providing personalized, evidence-based psychiatric care in a comfortable and supportive environment. Our experienced team of mental health professionals is dedicated to helping you achieve optimal mental wellness.
               </p>
               <Link

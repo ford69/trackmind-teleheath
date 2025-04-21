@@ -3,49 +3,97 @@ import { useParams, Link } from "react-router-dom";
 const conditionDetails = {
   depression: {
     title: "Depression",
-    description: "Depression is a mood disorder that causes a persistent feeling of sadness, hopelessness, and loss of interest...",
-    image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&q=80&w=2070",
+    description:
+      "Depression is a serious mood disorder that negatively affects how you feel, think, and act. It causes persistent sadness, a lack of interest or pleasure in activities, and can lead to a variety of emotional and physical problems.",
+    image:
+      "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&q=80&w=2070",
     symptoms: [
       "Persistent sadness or low mood",
       "Loss of interest in daily activities",
       "Changes in appetite or weight",
-      "Difficulty concentrating or making decisions"
+      "Difficulty concentrating or making decisions",
+      "Fatigue or loss of energy",
+      "Feelings of worthlessness or guilt",
     ],
+    help: {
+      title: "How We Can Help",
+      strategies: [
+        "Comprehensive psychiatric evaluations to assess symptoms and diagnosis",
+        "Personalized medication management for symptom relief",
+        "Evidence-based therapy such as Cognitive Behavioral Therapy (CBT)",
+        "Ongoing support and follow-ups to monitor progress and adapt care",
+      ],
+    },
   },
   anxiety: {
     title: "Anxiety",
-    description: "Anxiety disorders involve excessive fear or worry that disrupts daily life...",
-    image: "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&q=80&w=2070",
+    description:
+      "Anxiety disorders involve more than temporary worry or fear. For people with anxiety disorders, the anxiety does not go away and can get worse over time, affecting daily activities.",
+    image:
+      "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&q=80&w=2070",
     symptoms: [
       "Feeling nervous or restless",
       "Increased heart rate",
       "Sweating or trembling",
-      "Avoiding anxiety-inducing situations"
+      "Avoiding anxiety-inducing situations",
+      "Panic attacks",
     ],
+    help: {
+      title: "How We Can Help",
+      strategies: [
+        "Psychiatric evaluation to determine type and severity of anxiety",
+        "Tailored medication options for managing chronic anxiety or panic attacks",
+        "Therapy approaches such as CBT and exposure therapy",
+        "Lifestyle recommendations to support emotional regulation",
+      ],
+    },
   },
   adhd: {
     title: "ADHD",
-    description: "Attention-deficit/hyperactivity disorder (ADHD) involves difficulty paying attention, impulsivity, and hyperactivity...",
-    image: "https://images.unsplash.com/photo-1524646431754-32e4c3a8945b?auto=format&fit=crop&q=80&w=2070",
+    description:
+      "Attention-Deficit/Hyperactivity Disorder (ADHD) is a neurodevelopmental disorder characterized by inattention, impulsivity, and hyperactivity that interferes with functioning or development.",
+    image:
+      "https://images.unsplash.com/photo-1524646431754-32e4c3a8945b?auto=format&fit=crop&q=80&w=2070",
     symptoms: [
       "Inattention and distractibility",
       "Impulsiveness",
       "Hyperactivity",
-      "Disorganization"
+      "Disorganization",
+      "Forgetfulness in daily activities",
     ],
+    help: {
+      title: "How We Can Help",
+      strategies: [
+        "In-depth assessments and ADHD screening tools",
+        "Medication strategies including stimulants and non-stimulants",
+        "Behavioral coaching and coping strategies",
+        "Support for academic or work accommodations",
+      ],
+    },
   },
   ocd: {
     title: "OCD",
-    description: "Obsessive-Compulsive Disorder involves recurring thoughts and repetitive behaviors that interfere with daily life...",
-    image: "https://images.unsplash.com/photo-1613758947309-e0e4fbc60ebf?auto=format&fit=crop&q=80&w=2070",
+    description:
+      "Obsessive-Compulsive Disorder involves recurring, unwanted thoughts (obsessions) and/or repetitive behaviors (compulsions). These symptoms can interfere significantly with daily life and activities.",
+    image:
+      "https://images.unsplash.com/photo-1613758947309-e0e4fbc60ebf?auto=format&fit=crop&q=80&w=2070",
     symptoms: [
       "Repetitive hand-washing or checking",
       "Intrusive thoughts",
       "Strict routines or rituals",
-      "Fear of contamination or harm"
+      "Fear of contamination or harm",
+      "Difficulty tolerating uncertainty",
     ],
+    help: {
+      title: "How We Can Help",
+      strategies: [
+        "Accurate diagnosis and symptom tracking",
+        "Medication management for OCD (e.g., SSRIs)",
+        "Therapy with a focus on Exposure and Response Prevention (ERP)",
+        "Long-term treatment planning and support",
+      ],
+    },
   },
-  // Add more conditions as needed...
 };
 
 const ConditionDetail = () => {
@@ -71,9 +119,9 @@ const ConditionDetail = () => {
         </h1>
       </section>
 
-      {/* Content + Sidebar */}
+      {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 py-20 grid grid-cols-1 lg:grid-cols-3 gap-12">
-        {/* Main content */}
+        {/* Content */}
         <div className="lg:col-span-2">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <img
@@ -96,14 +144,26 @@ const ConditionDetail = () => {
                   <li key={index}>{symptom}</li>
                 ))}
               </ul>
-              <div className="mt-8">
-                <Link
-                  to="/conditions"
-                  className="text-purple-600 hover:text-purple-800 underline text-sm"
-                >
-                  ← Back to All Conditions
-                </Link>
-              </div>
+            </div>
+          </div>
+
+          {/* How We Can Help Section */}
+          <div className="mt-16">
+            <h2 className="text-3xl font-bold text-purple-800 mb-4">
+              {condition.help.title}
+            </h2>
+            <ul className="list-disc list-inside text-purple-700 text-lg space-y-2">
+              {condition.help.strategies.map((strategy, i) => (
+                <li key={i}>{strategy}</li>
+              ))}
+            </ul>
+            <div className="mt-8">
+              <Link
+                to="/conditions"
+                className="text-purple-600 hover:text-purple-800 underline text-sm"
+              >
+                ← Back to All Conditions
+              </Link>
             </div>
           </div>
         </div>
@@ -128,7 +188,7 @@ const ConditionDetail = () => {
                 </Link>
               </li>
             ))}
-          </ul>
+          </ul> 
         </aside>
       </div>
     </div>

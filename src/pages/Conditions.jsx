@@ -43,7 +43,7 @@ const Conditions = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
           >
-            Conditions We Treat
+            Conditions Treated
           </motion.h1>
           <motion.p
             className="text-xl text-purple-200"

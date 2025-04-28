@@ -48,13 +48,13 @@ const Contact = () => {
     {
       icon: FaEnvelope,
       title: 'Email',
-      content: 'info@trackmindpsychiatry.com',
-      link: 'mailto:info@trackmindpsychiatry.com',
+      content: 'admin@trackmindpmh.com',
+      link: 'mailto:admin@trackmindpmh.com',
     },
     {
       icon: FaMapMarkerAlt,
       title: 'Address',
-      content: '123 Healing Street, City, State 12345',
+      content: '1309 Coffeen Avenue STE 1200Sheridan, WY 828013072487317',
       link: '#',
     },
   ];

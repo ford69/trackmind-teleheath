@@ -37,21 +37,21 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-center text-gray-400">
                 <FaPhone className="mr-2" />
-                (555) 123-4567
+                (307) 248-7317 
               </li>
               <li className="flex items-center text-gray-400">
                 <FaEnvelope className="mr-2" />
-                info@trackmind.com
+                admin@trackmindpmh.com
               </li>
               <li className="flex items-center text-gray-400">
                 <FaMapMarkerAlt className="mr-2" />
-                123 Healing Street, City, State 12345
+                1309 Coffeen Avenue STE 1200 Sheridan, WY 82801
               </li>
             </ul>
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Trackmind Psychiatry. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} TrackMind Psychiatry. All rights reserved.</p>
         </div>
       </div>
     </footer>

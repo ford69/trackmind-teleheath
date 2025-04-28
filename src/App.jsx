@@ -14,6 +14,9 @@ import Booking from './pages/Booking';
 import Conditions from './pages/Conditions';
 import ConditionDetail from './pages/ConditionDetail';
 import Resources from './pages/Resources';
+import HowItWorks from './pages/Howitworks';
+import Resource from './pages/Resource';
+import ResourceDetail from './pages/ResourceDetail';
 
 function App() {
   useEffect(() => {
@@ -37,6 +40,9 @@ function App() {
             <Route path="/conditions" element={<Conditions />} />
             <Route path="/conditions/:slug" element={<ConditionDetail />} />
             <Route path="/resources" element={<Resources />} />
+            <Route path="/how-it-works" element={<HowItWorks />} />
+            <Route path="/resource" element={<Resource />} />
+            <Route path="/resources/:id" element={<ResourceDetail />} />
           </Routes>
         </main>
         <Footer />

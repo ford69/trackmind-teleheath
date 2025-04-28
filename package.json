@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.2.0",
     "aos": "^2.3.4",
     "framer-motion": "^12.7.4",
     "react": "^18.2.0",

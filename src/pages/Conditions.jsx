@@ -13,10 +13,10 @@ const conditionData = [
   { name: "Bipolar Disorder", icon: FiSun },
   { name: "PTSD", icon: FiAlertCircle },
   { name: "OCD", icon: FiActivity },
-  { name: "ADHD", icon: FiWind },
+  // { name: "ADHD", icon: FiWind },
   { name: "Schizophrenia", icon: FiMeh },
   { name: "Panic Disorder", icon: FiEyeOff },
-  { name: "Borderline Personality", icon: FiUserCheck },
+  // { name: "Borderline Personality", icon: FiUserCheck },
   { name: "Insomnia", icon: FiMoon }
 ];
 

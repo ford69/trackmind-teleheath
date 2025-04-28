@@ -9,6 +9,8 @@ const Navbar = () => {
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/services' },
+    { name: 'How It Works', href: '/how-it-works' },
+    { name: 'Resource', href: '/resource' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -25,7 +27,7 @@ const Navbar = () => {
           <div className="flex justify-between h-16">
             <div className="flex items-center">
               <Link to="/" className="flex-shrink-0">
-                <span className="text-2xl font-bold text-purple-600">Trackmind Psychiatry</span>
+                <span className="text-2xl font-bold text-purple-600">TrackMind Psychiatry</span>
               </Link>
             </div>
 

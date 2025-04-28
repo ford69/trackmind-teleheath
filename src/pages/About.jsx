@@ -6,7 +6,7 @@ const About = () => {
     {
       icon: FaUserMd,
       title: 'Progress over Perfection',
-      description: 'Our team consists of highly qualified mental health professionals with years of experience.',
+      description: 'Every step forward in your mental health journey matters',
     },
     {
       icon: FaHeart,
@@ -122,14 +122,14 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div className="rounded-lg overflow-hidden shadow-md">
                 <img
-                  src="/images/dr-lilian-bor.jpg"
+                  src="/images/lilian.jpeg"
                   alt="Dr. Lilian Bor"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div>
                 <h2 className="text-3xl font-bold text-purple-900 mb-4">Meet Our Providers</h2>
-                <h3 className="text-xl font-semibold text-purple-700 mb-4">Dr. Lilian Bor, DNP, PMHNP-BC</h3>
+                <h3 className="text-xl font-semibold text-purple-700 mb-4">Lilian Bor,DNP,APRN,PMHNP-BC</h3>
                 <p className="text-purple-800 mb-4">
                   Dr. Lilian Bor is a board-certified Psychiatric & Mental Health Nurse Practitioner with over 13 years of healthcare experience. She is known for her empathetic, patient-centered approach in treating a wide range of mental health conditions.
                 </p>
@@ -137,7 +137,7 @@ const About = () => {
                   She holds degrees from the University of Cincinnati, University of Mary, University of Texas at Arlington, and Chatham University. Her experience spans rural healthcare, the U.S. Army, and both inpatient and outpatient psychiatry.
                 </p>
                 <p className="text-purple-800">
-                  Dr. Bor provides compassionate, non-judgmental care tailored to meet each individual’s unique needs.
+                  Bor provides compassionate, non-judgmental care tailored to meet each individual’s unique needs.
                 </p>
               </div>
             </div>

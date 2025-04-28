@@ -1,41 +1,41 @@
 import { FaCheckCircle } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
-const services = [
-  {
-    title: 'Psychiatric Evaluation & Medication Management',
-    description:
-      'Comprehensive mental health assessments to understand your unique needs and develop a personalized treatment plan.',
-    features: [
-      'Initial 60-minute consultation',
-      'Mental health history review',
-      'Diagnostic assessment',
-      'Treatment recommendations',
-    ],
-  },
-  {
-    title: 'Support for co-occurring disorders',
-    description:
-      'Expert medication management to help you achieve optimal mental health and well-being.',
-    features: [
-      'Medication evaluation',
-      'Prescription management',
-      'Side effect monitoring',
-      'Regular follow-up visits',
-    ],
-  },
-  {
-    title: 'Therapy Services',
-    description:
-      'One-on-one therapy sessions focused on your personal growth and healing journey.',
-    features: [
-      'Cognitive Behavioral Therapy',
-      'Trauma-focused therapy',
-      'Anxiety management',
-      'Depression treatment',
-    ],
-  },
-];
+// const services = [
+//   {
+//     title: 'Psychiatric Evaluation & Medication Management',
+//     description:
+//       'Comprehensive mental health assessments to understand your unique needs and develop a personalized treatment plan.',
+//     features: [
+//       'Initial 60-minute consultation',
+//       'Mental health history review',
+//       'Diagnostic assessment',
+//       'Treatment recommendations',
+//     ],
+//   },
+//   {
+//     title: 'Support for co-occurring disorders',
+//     description:
+//       'Expert medication management to help you achieve optimal mental health and well-being.',
+//     features: [
+//       'Medication evaluation',
+//       'Prescription management',
+//       'Side effect monitoring',
+//       'Regular follow-up visits',
+//     ],
+//   },
+//   {
+//     title: 'Therapy Services',
+//     description:
+//       'One-on-one therapy sessions focused on your personal growth and healing journey.',
+//     features: [
+//       'Cognitive Behavioral Therapy',
+//       'Trauma-focused therapy',
+//       'Anxiety management',
+//       'Depression treatment',
+//     ],
+//   },
+// ];
 
 const cardVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -59,7 +59,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {/* <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
             <motion.div
               key={index}
@@ -84,14 +84,12 @@ const Services = () => {
               </ul>
             </motion.div>
           ))}
-        </div>
+        </div> */}
 
         {/* Detailed Services with Alternating Images and Text */}
         <section className="mt-24 bg-white py-16">
           <div className="max-w-6xl mx-auto px-6 sm:px-10 lg:px-16">
-            <h2 className="text-3xl font-extrabold text-center text-purple-900 mb-16">
-              Learn More About Our Services
-            </h2>
+
 
             {/* Service 1 */}
             <div className="grid md:grid-cols-2 gap-10 items-center mb-20" data-aos="fade-up">

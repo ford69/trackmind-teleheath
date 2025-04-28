@@ -66,7 +66,7 @@ const Home = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">
-                Welcome to Trackmind Psychiatry
+                Welcome to TrackMind Psychiatry
               </h1>
               <p className="text-xl md:text-2xl mb-8 text-purple-100 drop-shadow-md">
                 Compassionate psychiatric care for a better tomorrow
@@ -142,7 +142,7 @@ const Home = () => {
           >
             <h2 className="text-3xl font-bold text-purple-700 mb-4">Who We Are</h2>
             <p className="text-gray-700 text-lg leading-relaxed mb-6">
-              At Trackmind Psychiatry, we are a dedicated team of mental health professionals committed to providing compassionate,
+              At TrackMind Psychiatry, we are a dedicated team of mental health professionals committed to providing compassionate,
               evidence-based care. Our mission is to empower individuals on their journey to mental wellness through personalized
               treatment plans, holistic approaches, and unwavering support.
             </p>
@@ -184,47 +184,50 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Conditions Treated Section */}
-      <section className="py-16 bg-blue-50">
+{/* Conditions Treated Section */}
+<section className="py-16 bg-indigo-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-purple-800 mb-12">Conditions Treated</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mb-12">
+          <h2 className="text-3xl font-bold text-purple-800 mb-8">Conditions Treated</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-8">
             {[
               {
                 name: "Depression",
-                icon: FaSadTear,
-                desc: "Persistent sadness, loss of interest, and fatigue.",
+                img: "/images/Depression.jpg",
               },
               {
                 name: "Anxiety",
-                icon: FaHeartbeat,
-                desc: "Excessive worry, nervousness, or fear.",
+                img: "/images/Anxiety.jpg",
               },
               {
                 name: "Bipolar Disorder",
-                icon: FaBalanceScale,
-                desc: "Mood swings between highs and lows.",
+                img: "/images/BPD.webp",
               },
               {
                 name: "PTSD",
-                icon: FaBolt,
-                desc: "Stress or trauma response after a distressing event.",
+                img: "/images/PTSD.jpg",
               },
               {
                 name: "OCD",
-                icon: FaPuzzlePiece,
-                desc: "Repetitive thoughts and compulsive behaviors.",
+                img: "/images/OCD.jpg",
               },
               {
                 name: "ADHD",
-                icon: FaBrain,
-                desc: "Inattention, hyperactivity, and impulsivity.",
+                img: "/images/ADHD.jpg",
               },
             ].map((condition, index) => (
-              <div key={index} className="flex flex-col items-center text-purple-700 hover:text-purple-900 transition duration-200 px-4">
-                <condition.icon className="h-10 w-10 mb-3 text-purple-600" />
-                <h3 className="text-md font-semibold mb-1">{condition.name}</h3>
-                <p className="text-sm text-gray-600">{condition.desc}</p>
+              <div
+                key={index}
+                className="bg-white border-t-4 border-purple-600 p-4 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
+              >
+                <img
+                  src={condition.img}
+                  alt={condition.name}
+                  className="w-full h-40 object-cover rounded-md mb-4"
+                />
+                <h3 className="text-xl font-semibold text-purple-700 mb-2">{condition.name}</h3>
+                <p className="text-purple-600 text-sm">
+                  Learn more about how we help with {condition.name.toLowerCase()}.
+                </p>
               </div>
             ))}
           </div>
@@ -304,7 +307,7 @@ const Home = () => {
                 Expert Mental Health Care
               </h2>
               <p className="text-gray-600 mb-6">
-                At Trackmind Psychiatry, we believe in providing personalized, evidence-based psychiatric care in a comfortable and supportive environment. Our experienced team of mental health professionals is dedicated to helping you achieve optimal mental wellness.
+                At TrackMind Psychiatry, we believe in providing personalized, evidence-based psychiatric care in a comfortable and supportive environment. Our experienced team of mental health professionals is dedicated to helping you achieve optimal mental wellness.
               </p>
               <Link
                 to="/about"

@@ -6,16 +6,16 @@ import { ChevronUpIcon } from '@heroicons/react/24/outline';
 export default function FAQ() {
   const faqs = [
     {
-      question: "How does online therapy work?",
-      answer: "Online therapy works through secure video sessions, messaging, and phone calls. You'll be matched with a licensed therapist who you can meet with virtually from the comfort of your home."
+      question: "What is telehealth psychiatry?",
+      answer: "Telehealth psychiatry allows you to meet with a licensed mental health provider through secure video or phone appointments — offering the same quality care as an in-person visit, from the comfort of your own space."
     },
     {
       question: "Is online therapy as effective as in-person therapy?",
       answer: "Research shows that online therapy can be just as effective as in-person therapy for many conditions. It offers the added benefits of convenience and accessibility."
     },
     {
-      question: "How much does therapy cost?",
-      answer: "Our therapy sessions start at $80 per session. We work with many insurance providers and offer sliding scale fees based on income."
+      question: "How long are appointments?",
+      answer: "Initial evaluations: 45–60 minutes, Follow-up visits: 20–30 minutes, Every session is tailored to meet your individual needs."
     },
     {
       question: "How do I choose the right therapist?",

@@ -8,10 +8,53 @@ const resources = [
     summary: 'Understanding the foundations of mental health.',
     content: (
       <>
-        Learn the basics of mental health and wellness. 
-        Check out more resource information from <Link to="https://www.nami.org/" className="text-purple-600 underline">National Alliance on Mental Illness.</Link> page.
+        <p>Learn the basics of mental health and wellness. Here are some helpful resources:</p>
+        <ul className="list-disc list-inside mt-2 space-y-1">
+          <li>
+            <Link to="https://www.nami.org/" className="text-purple-600 underline" target="_blank" rel="noopener noreferrer">
+              NAMI - Learn more about mental health conditions, find support groups, and access educational resources for individuals and families.
+            </Link>
+          </li>
+          <li>
+            <Link to="https://www.mentalhealth.gov/" className="text-purple-600 underline" target="_blank" rel="noopener noreferrer">
+              MentalHealth.gov
+            </Link>
+          </li>
+          <li>
+            <Link to="https://www.cdc.gov/mentalhealth/" className="text-purple-600 underline" target="_blank" rel="noopener noreferrer">
+              CDC - Find trusted public health information, coping tips, and data on mental health trends and prevention strategies.
+            </Link>
+          </li>
+          <li>
+            <Link to="https://www.samhsa.gov/" className="text-purple-600 underline" target="_blank" rel="noopener noreferrer">
+            SAMHSA - Access national helplines, treatment locators, and information on mental health and substance use support.
+            </Link>
+          </li>
+          <li>
+            <Link to="https://www.apa.org/" className="text-purple-600 underline" target="_blank" rel="noopener noreferrer">
+            APA - Find expert articles and research on mental health topics, therapies, and coping strategies.
+            </Link>
+          </li>
+          <li>
+            <Link to="https://adaa.org/" className="text-purple-600 underline" target="_blank" rel="noopener noreferrer">
+            ADAA - Get information and tips on managing anxiety, depression, OCD, PTSD, and related conditions.
+            </Link>
+          </li>
+          <li>
+            <Link to="https://www.psychologytoday.com/us" className="text-purple-600 underline" target="_blank" rel="noopener noreferrer">
+            Psychology Today - Browse a large directory of therapists and read articles on a wide range of mental health and wellness topics.
+            </Link>
+          </li>
+          <li>
+            <Link to="https://www.nimh.nih.gov/" className="text-purple-600 underline" target="_blank" rel="noopener noreferrer">
+            NIMH - Discover the latest research, treatment options, and statistics on mental health disorders.
+            </Link>
+          </li>
+          
+        </ul>
       </>
     ),
+
     date: '2024-05-01',
   },
   {
@@ -19,7 +62,12 @@ const resources = [
     title: 'Mental Health Tips for Veterans',
     category: 'Veterans',
     summary: 'Tailored strategies to support veterans’ mental wellness.',
-    content: 'Full content on veteran-specific tips...',
+    content: (
+      <>
+        Supporting veterans with guidance on mental health and wellness.
+        Check out more details on our <Link to="https://www.mentalhealth.va.gov/" className="text-purple-600 underline">Mental Health Resources</Link> page.
+      </>
+    ),
     date: '2024-05-02',
   },
   {
@@ -49,3 +97,4 @@ const ResourceDetail = () => {
 };
 
 export default ResourceDetail;
+

@@ -10,7 +10,7 @@ const resources = [
     content: (
       <>
         Learn the basics of mental health and wellness. 
-        Check out more details on our <Link to="https://www.nami.org/" className="text-purple-600 underline">Mental Health Resources</Link> page.
+        Check out more details on <Link to="https://www.nami.org/" className="text-purple-600 underline">Mental Health Resources</Link> page.
       </>
     ),
     date: '2024-05-01',
@@ -20,7 +20,12 @@ const resources = [
     title: 'Mental Health Tips for Veterans',
     category: 'Veterans',
     summary: 'Tailored strategies to support veterans’ mental wellness.',
-    content: 'Full content on veteran-specific tips...',
+    content: (
+      <>
+       Supporting veterans with guidance on mental health and wellness.
+        Check out more details on our <Link to="https://www.mentalhealth.va.gov/" className="text-purple-600 underline">Mental Health Resources</Link> page.
+      </>
+    ),
     date: '2024-05-02',
   },
   {

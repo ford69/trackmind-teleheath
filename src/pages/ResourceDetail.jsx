@@ -6,7 +6,12 @@ const resources = [
     title: 'Mental Health Basics',
     category: 'Education',
     summary: 'Understanding the foundations of mental health.',
-    content: 'Full content about mental health basics...',
+    content: (
+      <>
+        Learn the basics of mental health and wellness. 
+        Check out more resource information from <Link to="https://www.nami.org/" className="text-purple-600 underline">National Alliance on Mental Illness.</Link> page.
+      </>
+    ),
     date: '2024-05-01',
   },
   {
@@ -35,7 +40,7 @@ const ResourceDetail = () => {
 
   return (
     <div className="min-h-screen bg-white py-16 px-6 max-w-4xl mx-auto">
-      <Link to="/resources" className="text-purple-600 hover:underline mb-4 inline-block">← Back to Resources</Link>
+      <Link to="/resource" className="text-purple-600 hover:underline mb-4 inline-block">← Back to Resources</Link>
       <h1 className="text-3xl font-bold text-purple-800 mb-4">{post.title}</h1>
       <p className="text-sm text-gray-500 mb-6">{post.date} • {post.category}</p>
       <p className="text-gray-700 leading-7 whitespace-pre-wrap">{post.content}</p>

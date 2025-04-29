@@ -7,7 +7,12 @@ const resources = [
     title: 'Mental Health Basics',
     category: 'Education',
     summary: 'Understanding the foundations of mental health.',
-    content: 'Full content about mental health basics...',
+    content: (
+      <>
+        Learn the basics of mental health and wellness. 
+        Check out more details on our <Link to="https://www.nami.org/" className="text-purple-600 underline">Mental Health Resources</Link> page.
+      </>
+    ),
     date: '2024-05-01',
   },
   {

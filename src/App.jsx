@@ -14,7 +14,7 @@ import Booking from './pages/Booking';
 import Conditions from './pages/Conditions';
 import ConditionDetail from './pages/ConditionDetail';
 import Resources from './pages/Resources';
-import HowItWorks from './pages/Howitworks';
+import HowItWorks from './pages/HowItWorks.jsx';
 import Resource from './pages/Resource';
 import ResourceDetail from './pages/ResourceDetail';
 

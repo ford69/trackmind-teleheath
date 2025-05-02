@@ -159,7 +159,7 @@ const Contact = () => {
                   className="h-5 w-5 text-purple-600 border-gray-300 rounded"
                 />
                 <label htmlFor="consent" className="text-sm text-gray-700">
-                  I agree to receive text messages from Healing Minds sent from (307) 248-7317
+                  I agree to receive text messages from TrackMinds sent from (307) 248-7317
                 </label>
               </div>
 

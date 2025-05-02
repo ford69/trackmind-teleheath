@@ -129,7 +129,7 @@ const Home = () => {
             data-aos="fade-right"
           >
             <img
-              src="images/WWA.jpg"
+              src="/images/tele-health-1.jpg"
               alt="Trackmind Team"
               className="rounded-2xl shadow-lg object-cover w-full h-full max-h-[450px]"
             />
@@ -321,7 +321,7 @@ const Home = () => {
             </div>
             <div className="rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300">
               <img
-                src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=2070"
+                src="/images/tele-health.jpg"
                 alt="Mental health professional"
                 className="w-full h-full object-cover"
               />

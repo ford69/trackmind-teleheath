@@ -70,14 +70,14 @@ const resources = [
     ),
     date: '2024-05-02',
   },
-  {
-    id: 'medication-management',
-    title: 'Medication Management Insights',
-    category: 'Medication',
-    summary: 'What to know about safely managing psychiatric meds.',
-    content: 'Full article on medication management...',
-    date: '2024-05-03',
-  },
+  // {
+  //   id: 'medication-management',
+  //   title: 'Medication Management Insights',
+  //   category: 'Medication',
+  //   summary: 'What to know about safely managing psychiatric meds.',
+  //   content: 'Full article on medication management...',
+  //   date: '2024-05-03',
+  // },
 ];
 
 const ResourceDetail = () => {

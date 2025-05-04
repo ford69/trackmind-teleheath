@@ -6,7 +6,7 @@ const conditionDetails = {
     description:
       "Depression is a serious mood disorder that negatively affects how you feel, think, and act. It causes persistent sadness, a lack of interest or pleasure in activities, and can lead to a variety of emotional and physical problems.",
     image:
-      "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&q=80&w=2070",
+      "/images/Depression.jpg",
     symptoms: [
       "Persistent sadness or low mood",
       "Loss of interest in daily activities",
@@ -30,7 +30,7 @@ const conditionDetails = {
     description:
       "Anxiety disorders involve more than temporary worry or fear. For people with anxiety disorders, the anxiety does not go away and can get worse over time, affecting daily activities.",
     image:
-      "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&q=80&w=2070",
+      "/images/anxiety-2.jpg",
     symptoms: [
       "Feeling nervous or restless",
       "Increased heart rate",

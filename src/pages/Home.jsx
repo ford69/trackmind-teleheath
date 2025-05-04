@@ -66,7 +66,7 @@ const Home = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">
-                Welcome to TrackMind Psychiatry & Mental Health Services
+                Welcome to TrackMind Psychiatric & Mental Health Services
               </h1>
               <p className="text-xl md:text-2xl mb-8 text-purple-100 drop-shadow-md">
                 Compassionate psychiatric care for a better tomorrow
@@ -142,7 +142,7 @@ const Home = () => {
           >
             <h2 className="text-3xl font-bold text-purple-700 mb-4">Who We Are</h2>
             <p className="text-gray-700 text-lg leading-relaxed mb-6">
-              At TrackMind Psychiatry & Mental Health Services, we are a dedicated team of mental health professionals committed to providing compassionate,
+              At TrackMind Psychiatric & Mental Health Services, we are a dedicated team of mental health professionals committed to providing compassionate,
               evidence-based care. Our mission is to empower individuals on their journey to mental wellness through personalized
               treatment plans, holistic approaches, and unwavering support.
             </p>
@@ -307,7 +307,7 @@ const Home = () => {
                 Expert Mental Health Care
               </h2>
               <p className="text-gray-600 mb-6">
-                At TrackMind Psychiatry & Mental Health Services, we believe in providing personalized, evidence-based psychiatric care in a comfortable and supportive environment. Our experienced team of mental health professionals is dedicated to helping you achieve optimal mental wellness.
+                At TrackMind Psychiatric & Mental Health Services, we believe in providing personalized, evidence-based psychiatric care in a comfortable and supportive environment. Our experienced team of mental health professionals is dedicated to helping you achieve optimal mental wellness.
               </p>
               <Link
                 to="/about"

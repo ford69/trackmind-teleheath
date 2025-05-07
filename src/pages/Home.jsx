@@ -40,12 +40,12 @@ const Home = () => {
     {
       icon: FaBrain,
       title: 'Psychiatric Evaluation & Medication Management',
-      description: 'Thorough psychiatric evaluations combined with personalized medication management to accurately diagnose mental health conditions.',
+      description: 'We offer thorough psychiatric evaluations to understand your unique mental health needs. Based on these assessments, we develop individualized treatment plans that may include medication. Our ongoing medication management ensures your treatment is safe, effective, and adjusted as needed to support your well-being.',
     },
     {
       icon: FaUserMd,
       title: 'Support for co-occurring disorders',
-      description: 'Integrated care for individuals facing both mental health and substance use challenges.',
+      description: 'Comprehensive care for individuals facing both mental health and substance use challenges, offering integrated treatment to promote lasting recovery and overall well-being.',
     },
     {
       icon: FaHeartbeat,
@@ -150,12 +150,12 @@ const Home = () => {
               Whether you're seeking help for anxiety, depression, ADHD, or another mental health condition, we're here to guide
               you with expertise, empathy, and innovation. Your mental health matters — and so do you.
             </p>
-            <a
-              href="/about"
+            <Link
+              to="/about"
               className="inline-block bg-purple-700 text-white px-6 py-3 rounded-xl shadow-md hover:bg-purple-800 transition-all duration-300"
             >
               Learn More
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -204,15 +204,15 @@ const Home = () => {
               },
               {
                 name: "PTSD",
-                img: "/images/PTSD.jpg",
+                img: "/images/ptsd.jpeg",
               },
               {
                 name: "OCD",
                 img: "/images/OCD.jpg",
               },
               {
-                name: "ADHD",
-                img: "/images/ADHD.jpg",
+                name: "Schizophrenia",
+                img: "/images/schizophrenia.jpg",
               },
             ].map((condition, index) => (
               <div

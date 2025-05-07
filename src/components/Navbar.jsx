@@ -28,7 +28,7 @@ const Navbar = () => {
             <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center gap-2">
               <img
-                src="/images/logo.png" 
+                src="/images/trackmind-logo.png" 
                 alt="TrackMind Psychiatry Logo"
                 className=" h-20 w-auto"
               />

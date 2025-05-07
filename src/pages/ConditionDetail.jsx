@@ -6,7 +6,7 @@ const conditionDetails = {
     description:
       "Depression is a serious mood disorder that negatively affects how you feel, think, and act. It causes persistent sadness, a lack of interest or pleasure in activities, and can lead to a variety of emotional and physical problems.",
     image:
-      "/images/Depression.jpg",
+      "/images/depression-3.jpg",
     symptoms: [
       "Persistent sadness or low mood",
       "Loss of interest in daily activities",
@@ -53,7 +53,7 @@ const conditionDetails = {
     description:
       "Attention-Deficit/Hyperactivity Disorder (ADHD) is a neurodevelopmental disorder characterized by inattention, impulsivity, and hyperactivity that interferes with functioning or development.",
     image:
-      "https://images.unsplash.com/photo-1524646431754-32e4c3a8945b?auto=format&fit=crop&q=80&w=2070",
+      "/images/adhd-1.jpg",
     symptoms: [
       "Inattention and distractibility",
       "Impulsiveness",
@@ -76,7 +76,7 @@ const conditionDetails = {
     description:
       "Obsessive-Compulsive Disorder involves recurring, unwanted thoughts (obsessions) and/or repetitive behaviors (compulsions). These symptoms can interfere significantly with daily life and activities.",
     image:
-      "https://images.unsplash.com/photo-1613758947309-e0e4fbc60ebf?auto=format&fit=crop&q=80&w=2070",
+      "/images/ocd.jpeg",
     symptoms: [
       "Repetitive hand-washing or checking",
       "Intrusive thoughts",

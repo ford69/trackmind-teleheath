@@ -1,5 +1,6 @@
 import { FaUserMd, FaHeart, FaHandHoldingHeart } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import { Link } from "react-router-dom";
 
 const About = () => {
   const values = [
@@ -170,12 +171,12 @@ const About = () => {
             <p className="text-gray-600 mb-8">
               Contact us today to schedule your consultation and begin your journey to better mental health.
             </p>
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="bg-purple-600 text-white px-8 py-3 rounded-full font-medium hover:bg-purple-700 transition duration-300"
             >
               Schedule a Consultation
-            </a>
+            </Link>
           </div>
 
         </div>

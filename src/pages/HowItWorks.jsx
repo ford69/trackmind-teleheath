@@ -19,19 +19,46 @@ const faqs = [
       "Telehealth psychiatry allows you to meet with a licensed mental health provider through secure video or phone appointments — offering the same quality care as an in-person visit, from the comfort of your own space.",
   },
   {
-    question: "How long are appointments?",
+    question: "What conditions do you treat?",
     answer:
-      "Initial evaluations: 45–60 minutes, Follow-up visits: 20–30 minutes, Every session is tailored to meet your individual needs.",
+      "We treat a wide range of mental health conditions, including Depression, Anxiety disorders, PTSD, Bipolar disorder, OCD, Mood disorders And more.",
   },
   {
-    question: "Do you accept insurance?",
+    question: "How do I prepare for a telehealth appointment?",
     answer:
-      "Yes, we accept a variety of insurance plans and also offer private pay options. Contact us to confirm your coverage.",
+      "All you need is a quiet, private space, a stable internet connection, and a smartphone, tablet, or computer with a camera and microphone.",
   },
   {
-    question: "Is my information secure?",
+    question: "Is telehealth secure and confidential?",
     answer:
-      "Absolutely. We're HIPAA compliant and follow strict protocols to protect your personal and health information.",
+      "Yes. We use HIPAA-compliant technology to ensure your sessions and personal information remain safe and private.",
+  },
+  {
+    question: "Can you prescribe medications through telehealth?",
+    answer:
+      "Yes. Our providers can evaluate, diagnose, and prescribe medications when appropriate. Prescriptions are sent directly to your preferred pharmacy.",
+  },
+  
+
+  {
+    question: " Will I see the same provider each time?",
+    answer:
+      "Yes. Continuity of care is important to us. You will work with the same provider throughout your treatment journey whenever possible.",
+  },
+  {
+    question: "Does insurance cover telehealth visits?",
+    answer:
+      "Aetna - New Mexico and Wyoming / Cigna- New Mexico and Wyoming. We’re happy to help verify your benefits and answer any questions about coverage.",
+  },
+  {
+    question: "What if I have a mental health emergency?",
+    answer:
+      "Telehealth is not intended for emergencies.If you are experiencing a crisis, please call 911 or visit your nearest emergency room immediately.",
+  },
+  {
+    question: "Do you offer both therapy and medication management?",
+    answer:
+      "Yes. We provide comprehensive care, including therapy, medication management, or a combination based on your personalized treatment plan.",
   },
 ];
 

@@ -201,8 +201,9 @@ const Contact = () => {
             <div className="mt-12">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Office Hours</h2>
               <div className="space-y-2">
-                <p className="text-gray-600">Monday - Friday: 9:00 AM - 5:00 PM</p>
-                <p className="text-gray-600">Saturday: 10:00 AM - 2:00 PM</p>
+                <p className="text-gray-600">5:00 PM Monday-Thursday 6PM to 8PM</p>
+                <p className="text-gray-600">Friday: 09:00 AM - 5:00 PM</p>
+                <p className="text-gray-600">Saturday: 09:00 AM - 5:00 PM</p>
                 <p className="text-gray-600">Sunday: Closed</p>
               </div>
             </div>

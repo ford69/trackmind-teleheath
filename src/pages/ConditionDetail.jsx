@@ -94,6 +94,126 @@ const conditionDetails = {
       ],
     },
   },
+  ptsd: {
+    title: "PTSD",
+    description:
+      "Post-Traumatic Stress Disorder (PTSD) can develop after experiencing or witnessing a traumatic event, such as violence, accidents, or natural disasters. It is marked by symptoms like intrusive memories, nightmares, emotional numbness, heightened anxiety, and avoidance of reminders related to the trauma.",
+    image:
+      "/images/ptsd.jpeg",
+    symptoms: [
+      "Recurrent, unwanted distressing memories of the traumatic event",
+      "Flashbacks (reliving the trauma as if it were happening again)",
+      "Nightmares or upsetting dreams related to the trauma",
+      "Severe emotional or physical reactions to reminders of the event",
+    ],
+    help: {
+      title: "How We Can Help",
+      strategies: [
+        "Cognitive Behavioral Therapy (CBT)",
+        "Specifically designed to address trauma-related symptoms using safe, structured approaches.",
+      ],
+    },
+  },
+  schizophrenia: {
+    title: "Schizophrenia",
+    description:
+      "Schizophrenia is a complex, chronic mental health condition that affects how a person thinks, feels, and perceives reality. It may involve symptoms such as hallucinations, delusions, disorganized thinking, and emotional withdrawal.",
+    image:
+      "/images/schizophrenia.jpg",
+    symptoms: [
+      "Hallucinations (hearing voices, seeing things that aren’t there)",
+      "Delusions (false, fixed beliefs — e.g., thinking someone is out to harm them)",
+      "Flat affect (reduced emotional expression)",
+      "Social withdrawal",
+      "Disorganized thinking or speech",
+      "Lack of motivation or pleasure in activities",
+
+    ],
+    help: {
+      title: "How We Can Help",
+      strategies: [
+        "Help reduce hallucinations, delusions, and agitation",
+        "Cognitive Behavioral Therapy (CBT)",
+        "Family therapy to support loved ones",
+        "Psychoeducation to help understand the condition",
+      ],
+    },
+  },
+  "bipolar-disorder": {
+    title: "Bipolar Disorder",
+    description:
+      "Bipolar disorder is a mental health condition characterized by extreme shifts in mood, energy, and activity levels. Individuals may experience episodes of intense emotional highs, known as mania or hypomania, followed by periods of deep depression. These mood swings can disrupt daily life, affecting relationships, work, and personal stability. During manic phases, individuals may feel unusually euphoric, energetic, or irritable, while depressive episodes often bring feelings of sadness, fatigue, and hopelessness. The cause of bipolar disorder is complex, involving genetic, biological, and environmental factors. Early recognition and consistent treatment are key to managing mood changes and maintaining emotional balance. With appropriate support, individuals can lead fulfilling lives and develop strategies to navigate the ups and downs of the condition.",
+    image:
+      "/images/BPD.webp",
+    symptoms: [
+      "Inflated self-esteem or grandiosity",
+      "Decreased need for sleep",
+      "More talkative or feeling pressured to keep talking",
+      "Racing thoughts",
+      "Persistent sadness or hopelessness",
+      "Loss of interest or pleasure in most activities",
+
+    ],
+    help: {
+      title: "How We Can Help",
+      strategies: [
+        "Routine and structure",
+        "Cognitive Behavioral Therapy (CBT)",
+        "Interpersonal and social rhythm therapy (IPSRT)",
+        "Psychoeducation to help recognize early signs of mood episodes",
+      ],
+    },
+  },
+  "panic-disorder": {
+    title: "Panic Disorder",
+    description:
+      "Panic disorder is a type of anxiety disorder characterized by recurring, unexpected panic attacks—sudden periods of intense fear that may include palpitations, sweating, shortness of breath, and feelings of impending doom. These attacks can occur without an obvious trigger and often lead individuals to fear future episodes, significantly impacting daily life and functioning.",
+    image: "/images/panic-attack.webp",
+    symptoms: [
+      "Sudden and repeated panic attacks",
+      "Heart palpitations or accelerated heart rate",
+      "Shortness of breath or choking sensations",
+      "Dizziness or lightheadedness",
+      "Fear of losing control or dying",
+      "Persistent worry about future attacks",
+    ],
+    help: {
+      title: "How We Can Help",
+      strategies: [
+        "Thorough psychiatric evaluation to confirm diagnosis",
+        "Cognitive Behavioral Therapy (CBT) targeting panic symptoms",
+        "Exposure therapy to reduce fear of triggers",
+        "Medication management (SSRIs or anti-anxiety medications)",
+        "Relaxation training and stress-reduction techniques",
+      ],
+    },
+  },
+  insomnia: {
+    title: "Insomnia",
+    description:
+      "Insomnia is a common sleep disorder that makes it difficult to fall asleep, stay asleep, or get restful sleep, even when you have the opportunity. It can lead to daytime fatigue, mood disturbances, difficulty concentrating, and reduced quality of life. Insomnia may be short-term (acute) or persist for months (chronic), and it can result from stress, medical or mental health conditions, or lifestyle factors.",
+    image: "/images/insomnia.jpg", 
+    symptoms: [
+      "Difficulty falling asleep at night",
+      "Waking up during the night or too early",
+      "Feeling tired despite sleep",
+      "Irritability or mood swings",
+      "Trouble focusing or remembering things",
+      "Increased anxiety around sleep",
+    ],
+    help: {
+      title: "How We Can Help",
+      strategies: [
+        "Sleep hygiene education and lifestyle adjustments",
+        "Cognitive Behavioral Therapy for Insomnia (CBT-I)",
+        "Relaxation techniques such as mindfulness or breathing exercises",
+        "Medication management when appropriate",
+        "Identifying and addressing underlying mental health factors",
+      ],
+    },
+  },
+
+
 };
 
 const ConditionDetail = () => {
@@ -178,17 +298,16 @@ const ConditionDetail = () => {
               <li key={key}>
                 <Link
                   to={`/conditions/${key}`}
-                  className={`block px-4 py-2 rounded-lg transition ${
-                    key === slug
+                  className={`block px-4 py-2 rounded-lg transition ${key === slug
                       ? "bg-purple-700 text-white"
                       : "text-purple-700 hover:bg-purple-100"
-                  }`}
+                    }`}
                 >
                   {item.title}
                 </Link>
               </li>
             ))}
-          </ul> 
+          </ul>
         </aside>
       </div>
     </div>

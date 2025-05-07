@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           <div>
             <h3 className="text-xl font-bold mb-4">Trackmind Psychiatry</h3>
             <p className="text-gray-400">
@@ -33,6 +33,21 @@ const Footer = () => {
             </ul>
           </div>
           <div>
+            <h3 className="text-xl font-bold mb-4">Legal</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link to="/privacy-policy" className="text-gray-400 hover:text-white">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link to="/terms-of-use" className="text-gray-400 hover:text-white">
+                  Terms Of Use
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div>
             <h3 className="text-xl font-bold mb-4">Contact Info</h3>
             <ul className="space-y-2">
               <li className="flex items-center text-gray-400">
@@ -51,7 +66,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} TrackMind Psychiatry. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} TrackMind Psychiatric & Mental Health Services. All rights reserved.</p>
         </div>
       </div>
     </footer>

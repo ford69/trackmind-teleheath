@@ -50,7 +50,7 @@ const Home = () => {
     {
       icon: FaHeartbeat,
       title: 'Therapy Services',
-      description: 'Individual therapy sessions focused on your personal growth and healing.',
+      description: 'Supportive therapy sessions focused on your personal growth and healing.',
     },
   ];
 

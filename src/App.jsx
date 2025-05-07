@@ -17,6 +17,8 @@ import Resources from './pages/Resources';
 import HowItWorks from './pages/HowItWorks.jsx';
 import Resource from './pages/Resource';
 import ResourceDetail from './pages/ResourceDetail';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfUse from './pages/TermsOfUse';
 
 function App() {
   useEffect(() => {
@@ -43,6 +45,9 @@ function App() {
             <Route path="/how-it-works" element={<HowItWorks />} />
             <Route path="/resource" element={<Resource />} />
             <Route path="/resources/:id" element={<ResourceDetail />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-of-use" element={<TermsOfUse />} />
+
           </Routes>
         </main>
         <Footer />

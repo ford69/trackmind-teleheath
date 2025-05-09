@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFax } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -9,8 +9,9 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Trackmind Psychiatry</h3>
             <p className="text-gray-400">
-              Providing compassionate psychiatric care and mental health services to help you live your best life.
+              Providing compassionate psychiatric care and mental health services to help you live your best life. <br /> 
             </p>
+            <p className="font-bold"> Services are currently available to residents of Wyoming and New Mexico </p>
           </div>
           <div>
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
@@ -59,8 +60,8 @@ const Footer = () => {
                 admin@trackmindpmh.com
               </li>
               <li className="flex items-center text-gray-400">
-                <FaMapMarkerAlt className="mr-2" />
-                1309 Coffeen Avenue STE 1200 Sheridan, WY 82801
+                <FaFax className="mr-2" />
+                Fax number: 307 761 6808
               </li>
             </ul>
           </div>

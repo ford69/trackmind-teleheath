@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFax } from 'react-icons/fa';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -52,9 +52,9 @@ const Contact = () => {
       link: 'mailto:admin@trackmindpmh.com',
     },
     {
-      icon: FaMapMarkerAlt,
-      title: 'Address',
-      content: '1309 Coffeen Avenue STE 1200Sheridan, WY 828013072487317',
+      icon: FaFax,
+      title: 'Fax number:',
+      content: '307 761 6808',
       link: '#',
     },
   ];
@@ -201,7 +201,7 @@ const Contact = () => {
             <div className="mt-12">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Office Hours</h2>
               <div className="space-y-2">
-                <p className="text-gray-600">5:00 PM Monday-Thursday 6PM to 8PM</p>
+                <p className="text-gray-600">Monday-Thursday 6PM to 8PM</p>
                 <p className="text-gray-600">Friday: 09:00 AM - 5:00 PM</p>
                 <p className="text-gray-600">Saturday: 09:00 AM - 5:00 PM</p>
                 <p className="text-gray-600">Sunday: Closed</p>

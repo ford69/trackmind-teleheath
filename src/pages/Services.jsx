@@ -103,7 +103,7 @@ const Services = () => {
                   Psychiatric Evaluation & Medication Management
                 </h3>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  Our psychiatric evaluations are comprehensive and tailored to you. In your initial consultation, we’ll dive deep into your mental health history and current concerns. You'll leave with a clear diagnosis, a thoughtful treatment plan, and ongoing support through regular medication management.
+                We start by getting to know you through a compassionate and thorough psychiatric evaluation. This is simply a conversation to understand your thoughts, emotions, and experiences, so we can identify any mental health concerns you may be facing. If medication could help, we’ll guide you through your options. Our ongoing medication management ensures the treatment is safe, effective, and tailored to your unique needs—with adjustments made as needed to support your well-being every step of the way.
                 </p>
               </div>
             </div>
@@ -135,7 +135,7 @@ const Services = () => {
               <div>
                 <h3 className="text-2xl font-bold text-purple-700 mb-4">Therapy Services</h3>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  We provide compassionate, evidence-based therapy for individuals navigating anxiety, depression, trauma, and more. Whether you're looking for CBT, trauma-focused care, or ongoing emotional support — our clinicians are here to help you heal, grow, and thrive.
+                  We provide compassionate, evidence-based therapy for individuals navigating anxiety, depression, trauma, and more. Whether you're looking for CBT, or ongoing emotional support — our clinicians are here to help you heal, grow, and thrive.
                 </p>
               </div>
             </div>

@@ -137,7 +137,7 @@ const HowItWorks = () => {
           <FaMoneyCheckAlt className="text-5xl text-purple-600 mx-auto mb-4" />
           <h2 className="text-2xl font-bold mb-2 text-purple-800">Insurance & Payment</h2>
           <p className="text-gray-700">
-            We accept most insurance plans and offer private pay options. Our team can help verify coverage before your visit.
+            We currently accept Cigna and Aetna insurance plans.
           </p>
         </div>
       </section>

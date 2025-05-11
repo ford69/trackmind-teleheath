@@ -66,6 +66,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+          <p>Contact information for Wyoming and New Mexico</p>
           <p>&copy; {new Date().getFullYear()} TrackMind Psychiatric & Mental Health Services. All rights reserved.</p>
         </div>
       </div>

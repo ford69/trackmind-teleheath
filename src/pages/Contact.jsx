@@ -34,7 +34,7 @@ const Contact = () => {
 
     if (isFormValid()) {
       console.log('Form submitted:', formData);
-      // Reset or send form here
+      window.location.href = 'https://spruce.care/trackmindpsychiatricmentalhealthllc';
     }
   };
 

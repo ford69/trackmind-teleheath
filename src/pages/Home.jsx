@@ -66,17 +66,20 @@ const Home = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">
-              Empowering Your Journey to Mental Wellness
+                Empowering Your Journey to Mental Wellness
               </h1>
               <p className="text-xl md:text-2xl mb-8 text-purple-100 drop-shadow-md">
                 Compassionate psychiatric care for a better tomorrow
               </p>
-              <Link
-                to="/contact"
+              <a
+                href="https://spruce.care/trackmindpsychiatricmentalhealthllc"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 py-4 rounded-full font-medium hover:from-pink-600 hover:to-purple-700 transition duration-300 transform hover:scale-105 shadow-lg"
               >
                 Get Started
-              </Link>
+              </a>
+
             </div>
           </div>
         </div>

@@ -11,7 +11,6 @@ const Footer = () => {
             <p className="text-gray-400">
               Providing compassionate psychiatric care and mental health services to help you live your best life. <br /> 
             </p>
-            <p className="font-bold"> Services are currently available to residents of Wyoming and New Mexico </p>
           </div>
           <div>
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>

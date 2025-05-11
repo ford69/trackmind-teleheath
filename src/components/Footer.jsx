@@ -48,7 +48,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3 className="text-xl font-bold mb-4">Contact Infornation for Wyoming and New Mexico</h3>
+            <h3 className="text-xl font-bold mb-4">Contact Information for Wyoming and New Mexico</h3>
             <ul className="space-y-2">
               <li className="flex items-center text-gray-400">
                 <FaPhone className="mr-2" />

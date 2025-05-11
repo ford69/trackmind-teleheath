@@ -130,7 +130,7 @@ const About = () => {
               </div>
               <div>
                 <h2 className="text-3xl font-bold text-purple-900 mb-4">Meet Our Providers</h2>
-                <h3 className="text-xl font-semibold text-purple-700 mb-4">Lilian Bor,DNP,APRN,PMHNP-BC</h3>
+                <h3 className="text-xl font-semibold text-purple-700 mb-4">Lilian Bor DNP, APRN, PMHNP-BC</h3>
                 <p className="text-purple-800 mb-4">
                   Dr. Lilian Bor is a board-certified Psychiatric & Mental Health Nurse Practitioner with over 13 years of healthcare experience. She is known for her empathetic, patient-centered approach in treating a wide range of mental health conditions.
                 </p>

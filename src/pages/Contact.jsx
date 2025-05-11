@@ -65,7 +65,7 @@ const Contact = () => {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Contact Us</h1>
           <p className="text-xl text-gray-600">
-          Get in touch with us to schedule a free 15-minute consultation to learn more about our services and book your initial appointment
+          Get in touch with us to schedule a free 15-minute consultation to learn more about our services and book your initial appointment.
           </p>
         </div>
 

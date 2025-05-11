@@ -55,11 +55,6 @@ const faqs = [
     answer:
       "Telehealth is not intended for emergencies.If you are experiencing a crisis, please call 911 or visit your nearest emergency room immediately.",
   },
-  {
-    question: "Do you offer both therapy and medication management?",
-    answer:
-      "Yes. We provide comprehensive care, including therapy, medication management, or a combination based on your personalized treatment plan.",
-  },
 ];
 
 const HowItWorks = () => {

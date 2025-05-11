@@ -48,7 +48,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3 className="text-xl font-bold mb-4">Contact Info</h3>
+            <h3 className="text-xl font-bold mb-4">Contact Infornation for Wyoming and New Mexico</h3>
             <ul className="space-y-2">
               <li className="flex items-center text-gray-400">
                 <FaPhone className="mr-2" />
@@ -61,10 +61,6 @@ const Footer = () => {
               <li className="flex items-center text-gray-400">
                 <FaFax className="mr-2" />
                 Fax number: 307 761 6808
-              </li>
-              <li className="flex items-center text-gray-400">
-                <FaMapMarkerAlt className="mr-2" />
-                Contact information for Wyoming and New Mexico
               </li>
             </ul>
           </div>

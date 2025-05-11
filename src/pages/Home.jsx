@@ -91,9 +91,9 @@ const Home = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {[
               {
-                name: "13+ Years of Experience",
+                name: "Telehealth visits",
                 icon: FaUserMd,
-                desc: "A decade-plus of trusted mental health care.",
+                desc: "Currently serving the adult residents of Wyoming and New Mexico.",
               },
               {
                 name: "Licensed Providers",

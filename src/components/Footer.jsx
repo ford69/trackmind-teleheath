@@ -62,11 +62,15 @@ const Footer = () => {
                 <FaFax className="mr-2" />
                 Fax number: 307 761 6808
               </li>
+              <li className="flex items-center text-gray-400">
+                <FaMapMarkerAlt className="mr-2" />
+                Contact information for Wyoming and New Mexico
+              </li>
             </ul>
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-          <p>Contact information for Wyoming and New Mexico</p>
+          
           <p>&copy; {new Date().getFullYear()} TrackMind Psychiatric & Mental Health Services. All rights reserved.</p>
         </div>
       </div>

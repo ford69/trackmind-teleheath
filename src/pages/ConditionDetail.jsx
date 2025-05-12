@@ -212,8 +212,6 @@ const conditionDetails = {
       ],
     },
   },
-
-
 };
 
 const ConditionDetail = () => {

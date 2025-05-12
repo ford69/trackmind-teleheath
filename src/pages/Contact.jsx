@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFax } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -65,7 +66,7 @@ const Contact = () => {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Contact Us</h1>
           <p className="text-xl text-gray-600">
-          Get in touch with us to schedule a free 15-minute consultation to learn more about our services and book your initial appointment.
+            Get in touch with us to schedule a free 15-minute consultation to learn more about our services and book your initial appointment.
           </p>
         </div>
 
@@ -87,9 +88,8 @@ const Contact = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className={`w-full px-4 py-2 border rounded-md focus:ring-teal-500 focus:border-teal-500 ${
-                    showError('name') ? 'border-red-500' : 'border-gray-300'
-                  }`}
+                  className={`w-full px-4 py-2 border rounded-md focus:ring-teal-500 focus:border-teal-500 ${showError('name') ? 'border-red-500' : 'border-gray-300'
+                    }`}
                 />
                 {showError('name') && <p className="text-red-500 text-sm mt-1">Name is required</p>}
               </div>
@@ -105,9 +105,8 @@ const Contact = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className={`w-full px-4 py-2 border rounded-md focus:ring-teal-500 focus:border-teal-500 ${
-                    showError('email') ? 'border-red-500' : 'border-gray-300'
-                  }`}
+                  className={`w-full px-4 py-2 border rounded-md focus:ring-teal-500 focus:border-teal-500 ${showError('email') ? 'border-red-500' : 'border-gray-300'
+                    }`}
                 />
                 {showError('email') && <p className="text-red-500 text-sm mt-1">Email is required</p>}
               </div>
@@ -123,9 +122,8 @@ const Contact = () => {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className={`w-full px-4 py-2 border rounded-md focus:ring-teal-500 focus:border-teal-500 ${
-                    showError('phone') ? 'border-red-500' : 'border-gray-300'
-                  }`}
+                  className={`w-full px-4 py-2 border rounded-md focus:ring-teal-500 focus:border-teal-500 ${showError('phone') ? 'border-red-500' : 'border-gray-300'
+                    }`}
                 />
                 {showError('phone') && <p className="text-red-500 text-sm mt-1">Phone is required</p>}
               </div>
@@ -141,13 +139,12 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   rows={4}
-                  className={`w-full px-4 py-2 border rounded-md focus:ring-teal-500 focus:border-teal-500 ${
-                    showError('message') ? 'border-red-500' : 'border-gray-300'
-                  }`}
+                  className={`w-full px-4 py-2 border rounded-md focus:ring-teal-500 focus:border-teal-500 ${showError('message') ? 'border-red-500' : 'border-gray-300'
+                    }`}
                 ></textarea>
                 {showError('message') && <p className="text-red-500 text-sm mt-1">Message is required</p>}
               </div>
-
+              <p className='text-gray-700 text-sm'>Do you Agree to receive text messages from TrackMind Psychiatric & Mental Health Service sent from (307) 248-7317. Message frequency varies and may include appointment reminders and follow up Instructions. Message and data rates may apply. Reply STOP at any time to end or unsubscribe. For assistance, reply HELP or contact support at (307) 248-7317 or admin@trackmindpmh.com</p>
               {/* Consent Toggle */}
               <div className="flex items-center gap-2">
                 <input
@@ -163,15 +160,18 @@ const Contact = () => {
                 </label>
               </div>
 
+              <p className="text-sm text-gray-700">
+                See our <Link to="/privacy-policy" className="text-purple-600 underline">Privacy Policy</Link> for details on how we handle your information. We never share or sell your opt-in information.
+              </p>
+
               {/* Submit Button */}
               <button
                 type="submit"
                 disabled={!isFormValid()}
-                className={`w-full px-6 py-3 rounded-md font-medium transition duration-300 ${
-                  isFormValid()
+                className={`w-full px-6 py-3 rounded-md font-medium transition duration-300 ${isFormValid()
                     ? 'bg-purple-600 text-white hover:bg-purple-700'
                     : 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                }`}
+                  }`}
               >
                 Send Message
               </button>

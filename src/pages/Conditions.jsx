@@ -80,7 +80,7 @@ const Conditions = () => {
                 transition={{ duration: 0.5, delay: i * 0.1 }}
               >
                 <Link
-                  to={`/conditions/${name.toLowerCase().replace(/\s+/g, "-")}`}
+                  to={`/conditions`}
                   className="bg-purple-100 hover:bg-purple-200 text-purple-900 rounded-xl p-6 shadow-md hover:shadow-xl transition transform hover:-translate-y-1 flex flex-col items-start"
                 >
                   <Icon className="text-3xl text-purple-700 mb-3" />
@@ -99,3 +99,6 @@ const Conditions = () => {
 };
 
 export default Conditions;
+
+//Link to condition detail page
+///${name.toLowerCase().replace(/\s+/g, "-")}

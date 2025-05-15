@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://trackmindpsychiatry.com/sitemap.xml

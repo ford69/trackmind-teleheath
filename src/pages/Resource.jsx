@@ -110,7 +110,7 @@ const Resources = () => {
           ))}
         </div>
         <div className="mt-8 text-center text-gray-600">
-          <p>External links provided on this site are for informational purposes only. TrackMind Psychiatric & Mental Health is not affiliated with, does not endorse, and is not responsible for the content, accuracy, or practices of any third-party websites.</p>
+          <p>TrackMind Psychiatric & Mental Health provides links to external websites for informational purposes only. These links do not constitute an endorsement of the content, services, or views expressed on those sites. TrackMind Psychiatric & Mental Health is not responsible for the accuracy, legality, or content of any external website or subsequent links. Users are encouraged to use their discretion when visiting external resources.</p>
         </div>
 
         {filtered.length > postsPerPage && (

@@ -100,12 +100,12 @@ const Resources = () => {
             >
               <h3 className="text-xl font-semibold text-purple-800 mb-2">{post.title}</h3>
               <p className="text-sm text-gray-600 mb-4">{post.summary}</p>
-              {/* <Link
+              <Link
                 to={`/resources/${post.id}`}
                 className="text-purple-600 font-medium hover:underline"
               >
                 Read More →
-              </Link> */}
+              </Link>
             </div>
           ))}
         </div>

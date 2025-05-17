@@ -100,14 +100,17 @@ const Resources = () => {
             >
               <h3 className="text-xl font-semibold text-purple-800 mb-2">{post.title}</h3>
               <p className="text-sm text-gray-600 mb-4">{post.summary}</p>
-              <Link
+              {/* <Link
                 to={`/resources/${post.id}`}
                 className="text-purple-600 font-medium hover:underline"
               >
                 Read More →
-              </Link>
+              </Link> */}
             </div>
           ))}
+        </div>
+        <div className="mt-8 text-center text-gray-600">
+          <p>External links provided on this site are for informational purposes only. TrackMind Psychiatri & Mental Health is not affiliated with, does not endorse, and is not responsible for the content, accuracy, or practices of any third-party websites.</p>
         </div>
 
         {filtered.length > postsPerPage && (
